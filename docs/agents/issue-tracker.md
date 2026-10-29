@@ -30,6 +30,10 @@ When set to `yes`, PRs run through the same labels and states as issues, using t
 
 GitHub shares one number space across issues and PRs, so a bare `#42` may be either: resolve with `gh pr view 42` and fall back to `gh issue view 42`.
 
+## Merging pull requests
+
+If using squash merge, review the final squash commit message before confirming the merge. Preserve the Codex co-author trailer when Codex contributed to the resulting changes, along with any other co-author signatures and trailers. Follow the attribution rule in root `AGENTS.md`.
+
 ## When a skill says "publish to the issue tracker"
 
 Create a GitHub issue.
