@@ -20,8 +20,8 @@ When an AI agent creates or substantively changes code, tests, configuration, or
 Co-authored-by: <Agent name> <agent-email@example.com>
 ```
 
-Use the agent's actual name and documented co-author email (for Codex: `Co-authored-by: Codex <noreply@openai.com>`). If no attribution email is known, ask the user for one rather than inventing it. Separate the trailer block from the message body with a blank line. Include each contributing agent's trailer exactly once. When editing a commit message, preserve existing co-author signatures and all other trailers. Keep the usual Git identity for the primary author and committer.
+Use the agent's project-designated co-author name and email (for Codex: `Co-authored-by: Codex <noreply@openai.com>`). If no attribution email is known, ask the user for one rather than inventing it. Separate the trailer block from the message body with a blank line. Include each contributing co-author identity exactly once. When editing a commit message, preserve existing co-author signatures and all other trailers. Keep the usual Git identity for the primary author and committer.
 
 Attribute only changes the agent actually contributed to in that commit; merely being present in a session or running checks does not qualify. Whether to create a commit is governed by the user's instructions and the project's other rules.
 
-When squash-merging a PR, inspect the final commit message before confirming the merge. Carry over the trailers of agents that contributed to changes in the resulting commit, once per agent, preserving other co-author signatures and trailers. See `docs/agents/issue-tracker.md` for the PR workflow.
+When squash-merging a PR, inspect the final commit message before confirming the merge. Carry over the co-author identities of agents that contributed to changes in the resulting commit, once per identity, preserving other co-author signatures and trailers. See `docs/agents/issue-tracker.md` for the PR workflow.
