@@ -32,7 +32,7 @@ GitHub shares one number space across issues and PRs, so a bare `#42` may be eit
 
 ## Merging pull requests
 
-If using squash merge, review the final squash commit message before confirming the merge. Preserve the Codex co-author trailer when Codex contributed to the resulting changes, along with any other co-author signatures and trailers. Follow the attribution rule in root `AGENTS.md`.
+If using squash merge, review the final squash commit message before confirming the merge. Preserve the co-author trailers of agents that contributed to the resulting changes, along with any other co-author signatures and trailers. Follow the attribution rule in root `AGENTS.md`.
 
 ## When a skill says "publish to the issue tracker"
 

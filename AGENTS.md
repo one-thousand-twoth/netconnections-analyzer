@@ -14,14 +14,14 @@ Use the single-context layout: root `GLOSSARY.md` and `docs/adr/`. See `docs/age
 
 ## Commits
 
-When Codex creates or substantively changes code, tests, configuration, or documentation included in a commit, append this trailer to that commit message:
+When an AI agent creates or substantively changes code, tests, configuration, or documentation included in a commit, append a trailer for that agent to the commit message:
 
 ```text
-Co-authored-by: Codex <noreply@openai.com>
+Co-authored-by: <Agent name> <agent-email@example.com>
 ```
 
-Separate the trailer block from the message body with a blank line. Include the Codex trailer exactly once. When editing a commit message, preserve existing co-author signatures and all other trailers. Keep the usual Git identity for the primary author and committer.
+Use the agent's actual name and documented co-author email (for Codex: `Co-authored-by: Codex <noreply@openai.com>`). If no attribution email is known, ask the user for one rather than inventing it. Separate the trailer block from the message body with a blank line. Include each contributing agent's trailer exactly once. When editing a commit message, preserve existing co-author signatures and all other trailers. Keep the usual Git identity for the primary author and committer.
 
-Attribute only changes Codex actually contributed to in that commit; merely being present in a session or running checks does not qualify. Whether to create a commit is governed by the user's instructions and the project's other rules.
+Attribute only changes the agent actually contributed to in that commit; merely being present in a session or running checks does not qualify. Whether to create a commit is governed by the user's instructions and the project's other rules.
 
-When squash-merging a PR, inspect the final commit message before confirming the merge. If Codex contributed to changes in the resulting commit, carry its trailer into that message once, preserving other co-author signatures and trailers. See `docs/agents/issue-tracker.md` for the PR workflow.
+When squash-merging a PR, inspect the final commit message before confirming the merge. Carry over the trailers of agents that contributed to changes in the resulting commit, once per agent, preserving other co-author signatures and trailers. See `docs/agents/issue-tracker.md` for the PR workflow.
